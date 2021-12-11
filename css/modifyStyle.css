@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+}
+
+#containerPrincipal3 {
+  font-family: sans-serif;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+  min-height: 320vh;
+}
+
+#cuerpo3 {
+  height: 100%;
+  width: 100%;
+}
+
+form {
+  font-family: sans-serif;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+  min-height: 320vh;
+}
+
+#instanciaSlider {
+  padding: 1rem;
+  min-width: 100vw;
+  height: 320vh;
+  scroll-snap-align: start;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#instanciaSlider #btnSubmit {
+  display: flex;
+  flex-direction: column;
+}
+#instanciaSlider #btnSubmit button {
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 1px solid #49F8D5;
+  background-color: #49F8D5;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 3px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  font-family: "Roboto Condensed", sans-serif;
+}
+#instanciaSlider #btnSubmit a {
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 1px solid #49F8D5;
+  background-color: #49F8D5;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 3px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  font-family: "Roboto Condensed", sans-serif;
+  background: #C1666B;
+  border: 0px;
+}
+
+.fila2 {
+  height: 130vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.card {
+  margin-top: 0px;
+  height: 25%;
+  width: 100%;
+}
+
+.card-image {
+  height: 100%;
+}
+
+img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  display: none;
+}
+
+#left {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  font-size: 30px;
+  display: none;
+}
+
+#right {
+  position: absolute;
+  top: 50%;
+  left: 97%;
+  display: none;
+  font-size: 30px;
+}
+
+#nav {
+  background: #333333;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  display: none;
+}
+#nav ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#nav ul #containerActive {
+  height: 10vh;
+  display: flex;
+  border-radius: 50%;
+}
+#nav ul #containerActive #active {
+  font-size: 40px;
+  height: 10vh;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+#nav ul #navNormal {
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  display: none;
+  color: white;
+  background: #171717;
+  position: absolute;
+  top: 10vh;
+  width: 100%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 30px;
+}
+#nav ul #navNormal #semiLogo {
+  font-size: 20px;
+  font-family: "Mochiy Pop One", sans-serif;
+  color: #49F8D5;
+  text-decoration: none;
+}
+#nav ul #navNormal #enlaces {
+  display: flex;
+  height: 50%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#nav ul #navNormal #enlaces form {
+  height: 50%;
+  min-height: unset;
+}
+#nav ul #navNormal #enlaces button {
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 1px solid #49F8D5;
+  background-color: #49F8D5;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 3px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  font-family: "Roboto Condensed", sans-serif;
+  height: 10vh;
+  width: 100%;
+  text-decoration: none;
+}
+#nav ul #navNormal #enlaces button a {
+  color: black;
+}
+#nav ul #navNormal #enlaces #borrarCol {
+  background: #C1666B;
+  border: 1px solid #C1666B;
+}
+
+@media (min-width: 576px) {
+  #containerPrincipal3 {
+    min-height: 100vh;
+  }
+
+  form {
+    min-height: 100vh;
+  }
+
+  #instanciaSlider {
+    height: 100vh !important;
+    gap: 3vh;
+  }
+  #instanciaSlider #btnSubmit {
+    flex-direction: row;
+    width: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .fila2 {
+    flex-direction: row;
+    height: 40vh;
+    width: 100%;
+    margin-bottom: unset;
+  }
+
+  .card {
+    height: 100%;
+    width: 20%;
+    margin: unset !important;
+  }
+
+  #right {
+    display: inline;
+    color: white;
+  }
+
+  #left {
+    display: inline;
+    color: white;
+  }
+
+  #nav ul {
+    height: 0%;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+
+  #nav {
+    height: 7vh;
+  }
+  #nav ul {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  #nav ul #containerActive #active {
+    display: none;
+  }
+  #nav ul #navNormal {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+    height: unset;
+    position: relative;
+    top: 0%;
+    font-size: 20px;
+    height: 7vh;
+    gap: 50%;
+  }
+  #nav ul #navNormal #enlaces {
+    display: flex;
+    width: 40%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #nav ul #navNormal #enlaces form {
+    overflow-x: unset;
+    width: 25%;
+  }
+  #nav ul #navNormal #enlaces button {
+    padding: 3px 15px;
+    margin-top: unset;
+    height: 4vh;
+  }
+
+  #cuerpo3 .fila2 {
+    height: 40vh;
+  }
+}
+@media (max-width: 768px) {
+  form {
+    scroll-snap-type: unset;
+    overflow-x: unset;
+    flex-direction: column;
+  }
+
+  #containerPrincipal3 {
+    scroll-snap-type: unset;
+    overflow-x: unset;
+  }
+
+  #paginacion {
+    display: flex;
+    flex-direction: column;
+    height: 7vh;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2vh;
+  }
+  #paginacion button {
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 1px solid #49F8D5;
+    background-color: #49F8D5;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 3px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  #paginacion a {
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 1px solid #49F8D5;
+    background-color: #49F8D5;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 3px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: darkgray;
+    border: 0px;
+    padding: 6px;
+    padding: 6px;
+    width: 50%;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=modifyStyle.css.map */

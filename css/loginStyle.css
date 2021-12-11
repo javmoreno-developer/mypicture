@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #F6F5F7;
+}
+
+#containerLogin {
+  height: 180vh;
+  width: 100%;
+  background: #1F2232;
+  display: flex;
+  flex-direction: column;
+}
+
+#card1 {
+  margin-top: 5vh;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: white;
+}
+#card1 #elementosLogin {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 70vh;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#card1 #elementosLogin h1 {
+  font-family: "Roboto", sans-serif;
+}
+#card1 #elementosLogin .iconos {
+  display: flex;
+  width: 80%;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-around;
+  display: none;
+}
+#card1 #elementosLogin .iconos .icono1 {
+  border-radius: 50%;
+  padding: 5%;
+  border: 2px solid darkgray;
+}
+#card1 #elementosLogin .iconos .icono2 {
+  border-radius: 50%;
+  padding: 5%;
+  border: 2px solid darkgray;
+}
+#card1 #elementosLogin .iconos .icono3 {
+  border-radius: 50%;
+  padding: 5%;
+  border: 2px solid darkgray;
+}
+#card1 #elementosLogin .grey {
+  color: darkgray;
+  text-align: center;
+  display: none;
+}
+#card1 #elementosLogin form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 45%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#card1 #elementosLogin form p {
+  font-size: 28px;
+  font-family: "Dongle", sans-serif;
+}
+#card1 #elementosLogin input[type=text] {
+  background: #1F2232;
+  color: #757575;
+  border: 0px;
+  width: 80%;
+  height: 5.5vh;
+  font-size: 16px;
+  padding-left: 1em;
+}
+#card1 #elementosLogin input[type=password] {
+  background: #1F2232;
+  color: #757575;
+  border: 0px;
+  width: 80%;
+  height: 5.5vh;
+  font-size: 16px;
+  padding-left: 1em;
+}
+
+#card1 #elementosLogin input::placeholder {
+  font-size: 22px;
+  padding-left: 10px;
+  font-family: "Dongle", sans-serif;
+  color: white;
+}
+#card1 #elementosLogin button {
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 1px solid #00CC99;
+  background-color: #00CC99;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  font-family: "Dongle", sans-serif;
+}
+
+#card2 {
+  margin-top: 10%;
+  height: 80vh;
+  width: 100%;
+  background: black;
+  color: white;
+}
+#card2 #overlay {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #41337A, #00CC99);
+}
+#card2 #overlay h1 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+#card2 #overlay p {
+  font-family: "Dongle", sans-serif;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+}
+#card2 #overlay button[type=button] {
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 1px solid #FF4B2B;
+  background-color: #FF4B2B;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  font-family: "Dongle", sans-serif;
+  background-color: transparent;
+  border-color: #FFFFFF;
+}
+#card2 #signUp {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 70vh;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Roboto", sans-serif;
+}
+#card2 #signUp .iconos {
+  display: flex;
+  width: 80%;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-around;
+  display: none;
+}
+#card2 #signUp .iconos .icono1 {
+  border-radius: 50%;
+  padding: 5%;
+  border: 2px solid darkgray;
+}
+#card2 #signUp .iconos .icono2 {
+  border-radius: 50%;
+  padding: 5%;
+  border: 2px solid darkgray;
+}
+#card2 #signUp .iconos .icono3 {
+  border-radius: 50%;
+  padding: 5%;
+  border: 2px solid darkgray;
+}
+#card2 #signUp .grey {
+  color: darkgray;
+  text-align: center;
+  display: none;
+}
+#card2 #signUp form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 65%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#card2 #signUp form p {
+  font-size: 28px;
+  font-family: "Dongle", sans-serif;
+}
+#card2 #signUp input[type=text] {
+  background: #EEEEEE;
+  color: #757575;
+  border: 0px;
+  width: 90%;
+  height: 5.5vh;
+  font-size: 16px;
+  padding-left: 1em;
+}
+#card2 #signUp input[type=password] {
+  background: #EEEEEE;
+  color: #757575;
+  border: 0px;
+  width: 90%;
+  height: 5.5vh;
+  font-size: 16px;
+  padding-left: 1em;
+}
+#card2 #signUp input::placeholder {
+  font-size: 22px;
+  padding-left: 10px;
+  font-family: "Dongle", sans-serif;
+}
+#card2 #signUp button {
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 1px solid  #00CC99;
+  background-color: #00CC99;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  font-family: "Dongle", sans-serif;
+}
+
+@media (min-width: 992px) {
+  #containerLogin {
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+  }
+
+  #card1 {
+    width: 40vw;
+    height: 90vh;
+  }
+
+  #card2 {
+    width: 40vw;
+    height: 90vh;
+    margin-top: 5vh;
+  }
+  #card2 #overlay {
+    width: 40%;
+    height: 90vh;
+  }
+  #card2 #signUp {
+    width: 40%;
+    height: 90vh;
+  }
+  #card2 #signUp form {
+    height: 50%;
+  }
+  #card2 #signUp form input[type=text] {
+    width: 70%;
+    background: #1F2232;
+  }
+  #card2 #signUp form input[type=password] {
+    width: 70%;
+    background: #1F2232;
+  }
+  #card2 #signUp form input[type=text]::placeholder { 
+    color: white;
+  }
+  #card2 #signUp form input[type=password]::placeholder { 
+    color: white;
+  }
+  #card2 #signUp .iconos {
+    height: 2vh;
+  }
+  #card2 #signUp .iconos .icono1 {
+    padding: 3%;
+  }
+  #card2 #signUp .iconos .icono2 {
+    padding: 3%;
+  }
+  #card2 #signUp .iconos .icono3 {
+    padding: 3%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

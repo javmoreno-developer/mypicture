@@ -1,0 +1,500 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle&display=swap");
+
+/*movidas de crearColeccion*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle&display=swap");
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#containerPrincipal {
+  height: 160vh;
+  width: 100%;
+}
+#c {
+  background: rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  justify-content: space-evenly;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#nav {
+  background: #333333;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+#nav ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#nav ul #containerActive {
+  height: 10vh;
+  display: flex;
+  border-radius: 50%;
+}
+#nav ul #containerActive #active {
+  font-size: 40px;
+  height: 10vh;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+#nav ul #navNormal {
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  display: none;
+  color: white;
+  background: #171717;
+  position: absolute;
+  top: 10vh;
+  width: 100%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 30px;
+}
+#nav ul #navNormal #semiLogo {
+  font-size: 20px;
+  font-family: "Mochiy Pop One", sans-serif;
+  color: #49F8D5;
+  text-decoration: none;
+}
+#nav ul #navNormal #enlaces {
+  display: flex;
+  height: 50%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#nav ul #navNormal #enlaces form {
+  height: 50%;
+}
+#nav ul #navNormal #enlaces button {
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 1px solid #49F8D5;
+  background-color: #49F8D5;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 3px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  font-family: "Roboto Condensed", sans-serif;
+  text-decoration: none;
+}
+
+#cuerpo {
+  background: black ;
+  height: 153vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+    
+}
+#cuerpo #contenido {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  justify-content: space-around;
+  line-height: 2;
+}
+#cuerpo #contenido #foto {
+  height: 30%;
+  width: 50%;
+}
+#cuerpo #contenido #foto a {
+  display: none;
+}
+#cuerpo #contenido #foto:hover a {
+  display: inline;
+}
+#cuerpo #contenido #modFoto {
+  height: 100vh;
+  width: 100%;
+  z-index: 6;
+  position: absolute;
+  background: black;
+  top: 0%;
+  display: none;
+  justify-content: center;
+}
+#cuerpo #contenido #modFoto #formulario2 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid red;
+}
+#cuerpo #contenido #modFoto #formulario2 #tit {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+#cuerpo #contenido h1 {
+  font-family: "Ubuntu", sans-serif;
+}
+#cuerpo #contenido p {
+  font-family: "Ubuntu", sans-serif;
+  line-height: 3;
+  text-align: center;
+}
+#cuerpo #contenido a {
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 1px solid #49F8D5;
+  background-color: #49F8D5;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 3px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  font-family: "Roboto Condensed", sans-serif;
+  text-decoration: none;
+}
+
+#cuerpo #contenido #foto {
+  background-repeat: no-repeat;
+}
+
+ #tutorial {
+  
+  background: #8789C0 !important;
+  border: 0px !important;
+}
+
+@media (min-width: 768px) {
+  #nav {
+    height: 7vh;
+  }
+  #nav ul {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  #nav ul #containerActive #active {
+    display: none;
+  }
+  #nav ul #navNormal {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+    height: unset;
+    position: relative;
+    top: 0%;
+    font-size: 20px;
+    height: 7vh;
+    gap: 50%;
+  }
+  #nav ul #navNormal #enlaces {
+    display: flex;
+    width: 30%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #nav ul #navNormal #enlaces button {
+    padding: 3px 15px;
+    margin-top: unset;
+  }
+}
+@media (max-width: 576px) {
+  #cuerpo {
+    background: black !important;
+  }
+}
+@media (min-width: 576px) {
+  #nav ul {
+    height: 0%;
+  }
+
+  #containerPrincipal {
+    height: 100vh;
+  }
+
+  #cuerpo {
+    height: 93vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: unset;
+  }
+  #cuerpo #foto {
+    width: 20% !important;
+  }
+  #cuerpo p {
+    line-height: 2 !important;
+  }
+
+  #cuerpo #contenido {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  #cuerpo #contenido #foto {
+    width: 100%;
+  }
+
+  #descriptiva {
+    width: 40%;
+    height: 40%;
+    background-image: url("../img/descriptiva.gif");
+  }
+  #descriptiva #tutorial {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
+
+/*CREAR COLECCION*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#containerPrincipal2 {
+  height: 100vh;
+  width: 100%;
+}
+
+#nav {
+  background: #333333;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+#nav ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#nav ul #containerActive {
+  height: 10vh;
+  display: flex;
+  border-radius: 50%;
+}
+#nav ul #containerActive #active {
+  font-size: 40px;
+  height: 10vh;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+#nav ul #navNormal {
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  display: none;
+  color: white;
+  background: #171717;
+  position: absolute;
+  top: 10vh;
+  width: 100%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 30px;
+}
+#nav ul #navNormal #semiLogo {
+  font-size: 20px;
+  font-family: "Mochiy Pop One", sans-serif;
+  color: #49F8D5;
+  text-decoration: none;
+}
+#nav ul #navNormal #enlaces {
+  display: flex;
+  height: 50%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#nav ul #navNormal #enlaces button {
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 1px solid #49F8D5;
+  background-color: #49F8D5;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#cuerpo2 {
+  height: 100vh;
+  width: 100%;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#cuerpo2 #contenido {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+#cuerpo2 #contenido form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+#cuerpo2 #contenido form #check {
+  display: flex;
+  flex-direction: column;
+  color: #EEB851;
+}
+#cuerpo2 #contenido form input[type=text] {
+  background: #050000;
+  border: 3px solid #979191;
+  height: 5vh;
+  width: 90%;
+  color: white;
+  padding-left: 1em;
+}
+#cuerpo2 #contenido form input[type=text]::placeholder {
+  color: #979191;
+  padding-left: 3%;
+  padding-left: 1em;
+}
+#cuerpo2 #contenido form select {
+  background: #050000;
+  border: 3px solid #979191;
+  height: 5vh;
+  width: 90%;
+  color: white;
+}
+#cuerpo2 #contenido form button {
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 1px solid #49F8D5;
+  background-color: #49F8D5;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+@media (min-width: 768px) {
+  #nav {
+    height: 7vh;
+  }
+  #nav ul {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  #nav ul #containerActive #active {
+    display: none;
+  }
+  #nav ul #navNormal {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+    height: unset;
+    position: relative;
+    top: 0%;
+    font-size: 20px;
+    height: 7vh;
+    gap: 50%;
+  }
+  #nav ul #navNormal #enlaces {
+    display: flex;
+    width: 30%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #nav ul #navNormal #enlaces button {
+    padding: 3px 15px;
+    margin-top: unset;
+  }
+
+  #cuerpo2 #contenido form input[type=text] {
+    width: 70%;
+    padding-left: 1em;
+  }
+  #cuerpo2 #contenido form select {
+    width: 70%;
+  }
+}
+@media (min-width: 576px) {
+  #nav ul {
+    height: 0%;
+  }
+
+  #containerPrincipal2 {
+    height: 90vh;
+  }
+
+  #cuerpo2 {
+    height: 93vh;
+  }
+  #cuerpo2 #contenido form {
+    width: 50%;
+  }
+  #cuerpo2 #contenido form h1 {
+    font-size: 35px;
+  }
+  #cuerpo2 #contenido form h4 {
+    font-size: 25px;
+  }
+  #cuerpo2 #contenido form #check {
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #cuerpo2 #contenido form #check input {
+    transform: scale(2);
+    
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
